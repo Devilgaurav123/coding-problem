@@ -1,0 +1,10 @@
+def remove_duplicate(number):
+    seen=[]
+    for num in number:
+        if num not in seen:
+            seen.append(num)
+    return seen
+
+list=[1,2,3,4,5,3,2,]
+result=remove_duplicate(list)
+print("remove element={}".format(result))
