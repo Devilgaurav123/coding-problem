@@ -1,0 +1,17 @@
+class father:
+    def walk(self):
+        print("father is walking")
+
+class mother:
+    def eat(self):
+        print("mother is eating")
+
+# Child inherits from both
+class child(father, mother):
+    def crying(self):
+        print("children is crying")
+
+c = child()
+c.walk()     # From father
+c.eat()      # From mother
+c.crying()   # Own method
